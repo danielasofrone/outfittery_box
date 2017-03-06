@@ -1,10 +1,22 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "LaunchRequest"
     },
     {
       "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "selectArticle",
+      "slots": [
+        {
+          "name": "Article",
+          "type": "LIST_OF_ARTICLES"
+        }
+      ]
     }
   ]
 }

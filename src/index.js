@@ -13,6 +13,15 @@ var handlers = {
     },
 
     'AMAZON.YesIntent' : function() {
-      this.emit( ':tell', 'Ok ich habe die Bestellung für dich aufgegeben. ')
-    }
+      this.emit( ':tell', 'Super. Ich brauche nur noch Details zu dem Inhalt deiner Box ')
+    },
+    'AMAZON.NoIntent' : function() {
+      this.emit( ':tell', 'Ok, dann vielleicht nächstes Mal. Ich wünsche die noch einen schönen Tag. ')
+    },
+    'selectArticle' : function() {
+      this.emit( ':ask', 'Was genau brauchst du? Oberteile, Hose oder Schuhe? Oder möchtest du neue Outfits? ')
+    },
+
 };
+
+//ich werde sofort eine Box für dich packen lassen
