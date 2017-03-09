@@ -1,8 +1,3 @@
 selectArticle ich möchte {Article}
 
 
-Custom slots:
-
-Type	LIST_OF_ARTICLES
-	
-Values	Oberteile | Hose | Schuhe | Neue Outfits
